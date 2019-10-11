@@ -13,6 +13,7 @@ function Board(props) {
         } else {
             setNext("X");
         }
+        //TODO 胜利算法
     }
 
     return  <div>
