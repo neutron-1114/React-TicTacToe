@@ -97,7 +97,10 @@ function RevertBtn(props) {
         const eles = [];
         for(let i = 0; i < props.history.length; i++) {
             eles.push(
-                <button key={i} onClick={() => props.onClick(i)}>{i}</button>
+                <button key={i} onClick={() => props.onClick(i)}>Click me to revert to No.{i} step.</button>
+            )
+            eles.push(
+                <br key={"br" + i}/>
             )
         }
         return eles;
